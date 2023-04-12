@@ -49,18 +49,109 @@ body{
     border-radius: 50%;
 }
 
-.shape-1{
-    height: 13.5em;
-    width: 13.5em;
-    right: -7.5em;
-    top: 1.8em;
+.search-container{
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
 }
 
-.shape-2{
-    height: 11em;
-    width: 11em;
-    bottom: -3.7em;
-    left: -2.5em;
+
+.search-container button{
+   outline: none;
+   font-size: 1em;
+   border: none;
+   border-radius: 10px;
+   padding: 12px; 
+   color: var(--blue-2);
+   background-color: var(--white);
 }
+
+.search-container input{
+    padding: 0.7em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--transp-white-1);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.search-container input::placeholder{
+    color: var(--off-white);
+}
+
+#output h2{
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 800;
+    margin: 1.25em 0;
+    margin-top: 12px;
+}
+
+.weather{
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: -0.7em;
+}
+
+.weather-description{
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 2em;
+}
+
+#output img{
+    margin: 0.6em 0 0 0;
+    width: 7.2em;
+    filter: drop-shadow(0 1.8em 3.7em var(--shadow));
+}
+
+#output h1{
+    font-size: 4em;
+    margin: 0.3em 0 0.7em 0;
+    line-height: 0;
+    font-weight: 200;
+    color: var(--white);
+}
+
+.temp-components{
+    display: flex;
+    justify-content: center;
+}
+
+.temp-components div{
+    padding: 0.3em 1em;
+}
+
+.temp-components div:first-child{
+    border-right: 1px solid var(--transp-white-1);
+}
+
+.temp-components .title{
+    font-weight: 800;
+    color: var(white);
+}
+
+.temp-components .temperature{
+    font-weight: 400;
+    color: var(--off-white);
+}
+
+h3{
+    margin-top: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+
 
  
